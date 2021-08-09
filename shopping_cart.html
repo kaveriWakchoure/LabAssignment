@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shopping Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <script src='js/bootstrap.min.js'></script>
+
+<style>
+ #light{
+        color: white;
+        background-color: #82c8ca;
+    }
+    #dark{
+        background-color: rgb(245, 148, 208);
+    }
+</style>
+   
+   
+</head>
+
+<body>
+<div class="container">
+    <div class="row mt-5" id="light">
+        <div class="card-fluid border border-dark rounded col-3 p-0" id="card1">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="product(1)" id="check1"></div>
+                <img  class="card-img" src="images/T-shirt1.jpg"> 
+
+              
+                    <div class="card-body">
+                        <span>Name:</span><span id="name1">T-shirt</span><br>
+                        <span>Description:</span>Hanes Men's 2-Pack Tagless Cotton Crew Neck Undershirts.Color:Yellow,grey <br>
+                        <span>Price:</span><span id="p1">500</span><br>
+                        <div class="row">
+                            <div class="col-2"><span>Qty:</span></div>
+                            <div class="col-6"><input type="text" value="1" id="q1" class="form-control"></div>
+                        </div>
+                    </div>
+
+                
+
+            </div>
+         </div>
+
+         <div class="card-fluid border border-dark rounded col-3 p-0" id="card2">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="product(2)" id="check2"></div>
+                <img  class="card-img" src="images/image5.jpg">
+
+          
+                    <div class="card-body">
+                        <span>Name:</span><span id="name2">Crew-Neck T-Shirts</span><br>
+                        <span>Description:</span>Women's Disney Star Wars Marvel
+                        Short-Sleeve Crew-Neck T-Shirts.100% Cotton,Imported,Machine Wash.<br>
+                        <span>Price:</span><span id="p2">250</span><br>
+                        <div class="row">
+                            <div class="col-2"><span>Qty:</span></div>
+                            <div class="col-6"><input type="text" value="1" id="q2" class="form-control"></div>
+                        </div>
+                    </div>
+
+                
+
+            </div>
+         </div>
+
+         <div class="card-fluid border border-dark rounded col-3 p-0" id="card3">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="product(3)" id="check3"></div>
+
+                <img  class="card-img" src="images/image6.jpg">
+          
+                    <div class="card-body">
+                        <span>Name:</span><span id="name3">Kurti</span><br>
+                        <span>Description:</span>Ninedaily Women's 3/4 Sleeve Plaid Shirts Zip Floral
+                        Casual Tunic Blouse Tops<br>
+                        <span>Price:</span><span id="p3">350</span><br>
+                        <div class="row">
+                            <div class="col-2"><span>Qty:</span></div>
+                            <div class="col-6"><input type="text" value="1" id="q3" class="form-control"></div>
+                        </div>
+                    </div>
+
+               
+
+            </div>
+         </div>
+
+
+         <div class="card-fluid border border-dark rounded col-3 p-0" id="card4">
+            <div class="card-body">
+                <div class="text-center mt-0"><input type="checkbox" onclick="product(4)" id="check4"></div>
+                <img  class="card-img" src="images/sandel.jpg">
+
+            
+                    <div class="card-body">
+                        <span>Name:</span><span id="name4">Rock Crown Flat Sandal</span><br>
+                        <span>Description:</span>Skechers Women's Meditation-Rock Crown
+                        Flat Sandal<br>
+                        <span>Price:</span><span id="p4">300</span><br>
+                        <div class="row">
+                            <div class="col-2"><span>Qty:</span></div>
+                            <div class="col-6"><input type="text" value="1" id="q4" class="form-control"></div>
+                        </div>
+                    </div>
+
+                
+
+            </div>
+         </div>
+
+
+
+</div>
+
+
+<div class="row mt-5" id="dark">
+    <div class="card-fluid border border-dark rounded col-3 p-0" id="card5">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="product(5)" id="check5"></div>
+            <img  class="card-img" src="images/image8.jpg">
+
+         
+                <div class="card-body">
+                    <span>Name:</span><span id="name5">T-shirt</span><br>
+                    <span>Description:</span>High Waisted-Rise Colored Stretch Jeans for Women Olive Mustard RED<br>
+                    <span>Price:</span><span id="p5">250</span><br>
+                    <div class="row">
+                        <div class="col-2"><span>Qty:</span></div>
+                        <div class="col-6"><input type="text" value="1" id="q5" class="form-control"></div>
+                    </div>
+                </div>
+
+         
+
+        </div>
+     </div>
+
+     <div class="card-fluid border border-dark rounded col-3 p-0" id="card6">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="product(6)" id="check6"></div>
+            <img  class="card-img" src="images/women Top.jpg">
+
+            
+                <div class="card-body">
+                    <span>Name:</span><span id="name6">Blouse Top</span><br>
+                    <span>Description:</span>Milumia Women's Elegant Floral Print Petal Cap Sleeve Pleated
+                    Vacation Office Work Blouse Top.<br>
+                    <span>Price:</span><span id="p6">200</span><br>
+                    <div class="row">
+                        <div class="col-2"><span>Qty:</span></div>
+                        <div class="col-6"><input type="text" value="1" id="q6" class="form-control"></div>
+                    </div>
+                </div>
+
+           
+
+        </div>
+     </div>
+
+     <div class="card-fluid border border-dark rounded col-3 p-0" id="card7">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="product(7)" id="check7"></div>
+            <img  class="card-img" src="images/crop top.jpg">
+
+           
+                <div class="card-body">
+                    <span>Name:</span><span id="name7">Tee T-shirt</span><br>
+                    <span>Description:</span>Romwe Women's Knot Front Cuffed Sleeve Striped Crop Top<br>
+                    <span>Price:</span><span id="p7">250</span><br>
+                    <div class="row">
+                        <div class="col-2"><span>Qty:</span></div>
+                        <div class="col-6"><input type="text" value="1" id="q7" class="form-control"></div>
+                    </div>
+                </div>
+
+          
+
+        </div>
+     </div>
+
+
+     <div class="card-fluid border border-dark rounded col-3 p-0" id="card8">
+        <div class="card-body">
+            <div class="text-center mt-0"><input type="checkbox" onclick="product(8)" id="check8"></div>
+            <img  class="card-img" src="images/image4.jpg">
+            
+                <div class="card-body">
+                    <span>Name:</span><span id="name8">Jogger</span><br>
+                    <span>Description:</span>Leggings Depot Women's Printed Solid Activewear Jogger.Color:Heather
+                    Charcoal<br>
+                    <span>Price:</span><span id="p8">200</span><br>
+                    <div class="row">
+                        <div class="col-2"><span>Qty:</span></div>
+                        <div class="col-6"><input type="text" value="1" id="q8" class="form-control"></div>
+                    </div>
+                </div>
+
+           
+
+        </div>
+     </div>
+    </div>
+<br>
+<h4>Ordered Item</h4>
+<div class="row">
+    <div class="col-12">
+        <table id="tab" class="">
+
+        </table>
+    </div>
+<br>
+</div>
+<hr>
+<button type="button" class="btn btn-primary" onclick="totalSum()">Display Total Amount
+
+</button><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+var sum=0;
+var count=0;
+
+        function product(a){
+    var c = document.getElementById('check'+a)
+    if (c.checked) {
+
+       document.getElementById('q'+a) .disabled=true
+        
+	   document.getElementById('card'+a).style.backgroundColor='#F4D160'
+       var ele=document.createElement("tr")
+       ele.id="row"+a
+       document.getElementById('tab').appendChild(ele)
+
+       var el=document.createElement('td')
+       el.id=a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="item"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="price"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="quantity"+a
+       document.getElementById('row'+a).appendChild(el)
+
+       var el=document.createElement('td')
+       el.id="total"+a
+       document.getElementById('row'+a).appendChild(el)
+      
+     var name = document.getElementById("name"+a)
+     var price =document.getElementById("p"+a)
+     var qt = document.getElementById("q"+a).value
+     var pr=parseInt(price.textContent)*qt
+        sum+=pr
+     count++
+     document.getElementById(a).innerHTML=count+'.&emsp;'
+     document.getElementById("item"+a).innerHTML=name.textContent+'&emsp;'
+     document.getElementById("price"+a).innerHTML=price.textContent+'&emsp;'
+     document.getElementById("quantity"+a).innerHTML=qt+'&emsp;'
+     document.getElementById('total'+a).innerHTML=pr+"&emsp;"
+
+    }else{
+        count--
+        var price =document.getElementById("p"+a)
+        var qt = document.getElementById("q"+a).value
+        var pr=parseInt(price.textContent)*qt
+        sum-=pr
+        document.getElementById('q'+a) .disabled=false
+        document.getElementById(a).innerHTML=count+'.&emsp;'
+    document.getElementById('tab').removeChild(document.getElementById('row'+a))
+        if (1<=a&&a<=4||9<=a&&a<=12) {
+            document.getElementById('card'+a).style.backgroundColor='#C2FFD9'
+          
+        } else if (5<=a&&a<=8) {
+                document.getElementById('card'+a).style.backgroundColor='#seagreen'
+               
+            }
+    }
+}
+function totalSum(){
+alert("Total sum: "+sum)
+}
+
+    </script>
+</body>
+
+</html>
